@@ -16,3 +16,6 @@ print(a)
 c = [3,1,89,7456,65,4,6,891]
 c.sort()
 print(c)
+
+# sum-- to add all the elements of the integer list
+print(sum(c))
