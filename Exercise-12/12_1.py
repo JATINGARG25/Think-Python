@@ -11,3 +11,15 @@ print(type(t))
 
 print(a)
 print(type(a))
+
+#to convert a string into tuple
+
+b = tuple('jatin')
+print(b)
+
+print(b[0:3]) # slice operator in tuple
+
+# we can not modify a tuple but we can regenerate a tuple
+
+c = ("a",) + b[1:]
+print(c)
