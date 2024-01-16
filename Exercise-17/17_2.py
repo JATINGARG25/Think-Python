@@ -1,6 +1,6 @@
 class Time(object):
-    def print_time(time):
-        print('%.2d:%.2d:%.2d' % (time.hour, time.minute, time.second))
+    def print_time(self):
+        print('%.2d:%.2d:%.2d' % (self.hour, self.minute, self.second))
 
 start = Time()
 start.hour = 9
