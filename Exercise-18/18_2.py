@@ -1,14 +1,3 @@
-''' Here, suits are spades, hearts, dimaonds and clubs.
-    That is,
-            Spades   → 3
-            Hearts   → 2
-            Diamonds → 1
-            Clubs    → 0
-    
-    And ranks are : Ace,2,3,4,5,6,7,8,9,10,jack,queen,king
-                    Jack  → 11
-                    Queen → 12
-                    King  → 13                           '''
 import random
 
 class Card:
@@ -57,15 +46,19 @@ class Deck(object):
     def shuffle(self):
         random.shuffle(self.cards)
 
+    def move_cards(self, hand, num):
+        for i in range(num):
+            hand.add_card(self.pop_card())
+            
 class Hand(Deck):
     def __init__(self, label=''):
         self.cards = []
         self.label = label
-        
-# a = Card(1,12)
-# b = Card(2,1)
+
+hand = Hand("New hand")
+# print(hand.label)
 
 deck = Deck()
-print(deck)
-
-Deck.pop_card(1)
+card = deck.pop_card()
+hand.add_card(card)
+print(hand)
