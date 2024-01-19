@@ -6,5 +6,6 @@ j.title("Welcome To J Interface")
 # entry.get()
 
 text = j.te(width=100,height=5)        # for multiple lines
-text.insert(END, 'A line of text.') 
+# text.insert(END, 'A line of text.') 
+text.insert(2.1,"nothing")
 j.mainloop()
